@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 ## DB server
-Run `json-server --watch database.js` for to start the database.
+Run `json-server --watch database.js` to start the database.
 
 ## Code scaffolding
 
