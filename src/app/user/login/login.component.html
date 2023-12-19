@@ -1,0 +1,28 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 login">
+            <div class="card h-100 d-flex align-items-center justify-content-center">
+                <div class="text-center text-white mt-4">
+                    <h3>User Login</h3> 
+                </div>
+                <div *ngIf="errorMessage" class="alert alert-warning alert-dismissible fade show">
+                  <strong>{{errorMessage}}</strong> You should check .
+                </div>
+                <form [formGroup]="loginForm" class="form-group" (ngSubmit)="login()">
+                    <div class="mb-3">
+                      <label for="email" class="form-label text-white">Email address</label>
+                      <input type="email" class="form-control" id="email" formControlName="email">
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label text-white">Password</label>
+                      <input type="password" class="form-control" id="password" formControlName="password"> 
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-check-label text-white">New User ? <a [routerLink]="['/signup']">Sign Up</a> </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-4 login-btn">Sign in</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>

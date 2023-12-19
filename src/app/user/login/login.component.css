@@ -1,0 +1,32 @@
+.login{
+    align-items: center;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+}   
+.login .card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/assets/bg/login.jpg");
+
+}
+.login-btn{
+
+    width: 100%;
+}
+.form-group, .form-control {width : 90%;}
+input{
+
+   border: none;
+   border-radius: 1;
+   outline:none;
+   border-bottom: 1px solid;
+   background-color: ghostwhite;
+   margin-left: 10px;
+}
+a{
+    text-decoration: none;
+}
+.alert{
+    width: 80%;
+}

@@ -1,0 +1,44 @@
+<div class=" mt-5">
+ 
+    <!-- <div class="row"> -->
+        <div class=" update mb-3">
+            <div class="card h-100 d-flex align-items-center justify-content-center">
+                <div class="text-center mt-4">
+                    <h3>Update Details</h3> 
+                </div>
+                <form [formGroup]="updateForm" class="form-group" (ngSubmit)="updatedForm()">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" formControlName="name">
+                        <span *ngIf="name?.errors?.['required']" class="small text-danger ml-2"> * Name is required</span>
+                        <span *ngIf="name?.errors?.['minlength']" class="small text-danger ml-2"> * Name should be greater than 3 characters</span>
+                        <span *ngIf="name?.errors?.['maxlength']" class="small text-danger ml-2"> * Name should not be more than 50 characters</span>
+                      </div>
+                      <div class="mb-3">
+                        <label for="mobile" class="form-label">Mobile number</label>
+                        <input type="number" class="form-control" id="mobile" formControlName="mobile">
+                        <span *ngIf="mobile?.errors?.['required']" class="small text-danger ml-2"> * Mobile number is required</span>
+                        <span *ngIf="mobile?.errors?.['pattern']" class="small text-danger ml-2"> * Invalid mobile number</span>
+                      </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="email" formControlName="email">
+                      <span *ngIf="email?.errors?.['required']" class="small text-danger ml-2"> * Email  is required</span>
+                        <span *ngIf="email?.errors?.['pattern']" class="small text-danger ml-2"> * Invalid email address</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" formControlName="password">
+                        <span *ngIf="password?.errors?.['required']" class="small text-danger ml-2"> * password  is required</span>
+                          <span *ngIf="password?.errors?.['pattern']" class="small text-danger ml-2"> * Minimum Length: A strong password should have a minimum length, typically at least 8 characters.
+                            Uppercase Letters: It should contain at least one uppercase letter.
+                            Lowercase Letters: It should contain at least one lowercase letter.
+                            It should contain at least one number.
+                            Special Characters: It should contain at least one special character (e.g., !, @, #, $).</span>
+                      </div>
+                    <button type="submit" class="mb-4 btn btn-outline-success register-btn">Update Details</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->

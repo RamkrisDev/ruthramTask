@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "name": "ramakrishnan krish V T",
+      "mobile": 8489515021,
+      "email": "mail2krish4597@gmail.com",
+      "password": "Temp@123",
+      "id": 1
+    },
+    {
+      "name": "muthu pandi",
+      "mobile": 1234567899,
+      "email": "muthu@gmail.com",
+      "password": "Muthu@123",
+      "id": 2
+    },
+    {
+      "name": "nisha",
+      "mobile": 3453645675,
+      "email": "seo11@gmail.com",
+      "password": "Temp@123",
+      "id": 3
+    }
+  ],
+  "login-history": [
+    {
+      "id": 1,
+      "time": "17/12/2023 10:07:00",
+      "userId": 1
+    }
+  ]
+}
